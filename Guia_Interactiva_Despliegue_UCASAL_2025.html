@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guía Interactiva – Despliegue UCASAL 2025</title>
+  <style>
+    body{font-family:Segoe UI,Arial;background:#0b1220;color:#e6eef8;margin:0;padding:0;}
+    header{background:#11182a;padding:20px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.4);}
+    h1{color:#38bdf8;margin:0;}
+    h2{color:#38bdf8;}
+    .content{max-width:900px;margin:20px auto;padding:20px;background:rgba(255,255,255,.02);border-radius:10px;}
+    pre{background:#071426;color:#d6eefc;padding:10px;border-radius:8px;overflow-x:auto;}
+    code{background:rgba(255,255,255,.05);padding:2px 5px;border-radius:5px;}
+    button{background:#38bdf8;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;color:#0b1220;font-weight:bold;}
+    button:hover{background:#7dd3fc;}
+    details{background:rgba(255,255,255,.04);padding:10px;border-radius:8px;margin:10px 0;}
+    summary{cursor:pointer;font-weight:bold;}
+    footer{text-align:center;padding:15px;font-size:14px;color:#94a3b8;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Guía Interactiva – Proyecto Web (UCASAL 2025)</h1>
+  <p>Material de apoyo para el espacio <strong>Programacion Web </strong></p>
+</header>
+<div class="content">
+  <h2>1️⃣ Conceptos Clave</h2>
+  <p><strong>Hosting:</strong> Servicio donde se alojan los archivos del sitio web.</p>
+  <p><strong>Dominio:</strong> Nombre que se usa para acceder al sitio (por ej. <code>www.ejemplo.com</code>).</p>
+  <p><strong>Despliegue:</strong> Publicación de tu sitio en Internet.</p>
+  <p><strong>Gestor de transferencia:</strong> Programa o servicio que transfiere archivos entre tu PC y el servidor.</p>
+
+  <h2>2️⃣ Preparar tu Proyecto</h2>
+  <p>Crea una carpeta llamada <code>proyecto-web</code> y dentro agrega:</p>
+  <pre><code>index.html
+css/styles.css
+js/main.js
+img/</code></pre>
+
+  <h2>3️⃣ Prueba en Local</h2>
+  <p>Abrí el archivo <code>index.html</code> en tu navegador o usá un servidor local:</p>
+  <pre><code>python -m http.server 5500</code></pre>
+  <p>Luego entrá a <code>http://localhost:5500</code></p>
+
+  <h2>4️⃣ Subí tu proyecto a GitHub</h2>
+  <ol>
+    <li>Entrá a <a href="https://github.com" target="_blank">GitHub</a> y creá un repositorio nuevo.</li>
+    <li>Subí los archivos de tu carpeta <code>proyecto-web</code>.</li>
+  </ol>
+
+  <h2>5️⃣ Publicá con GitHub Pages</h2>
+  <ol>
+    <li>En el repositorio, abrí <strong>Settings → Pages</strong>.</li>
+    <li>En “Source” elegí <code>main</code> y carpeta <code>/root</code>.</li>
+    <li>Guardá los cambios. GitHub te mostrará la URL pública del sitio.</li>
+  </ol>
+  <details>
+    <summary>Ejemplo</summary>
+    <p>https://usuario.github.io/proyecto-web/</p>
+  </details>
+
+  <h2>6️⃣ Verificá tu sitio</h2>
+  <p>Esperá unos minutos y abrí la URL generada. Si todo está correcto, tu sitio estará en línea 🌐</p>
+
+  <h2>7️⃣ Consejos Finales</h2>
+  <ul>
+    <li>Mantené nombres de archivos simples y sin espacios.</li>
+    <li>Probá los enlaces antes de publicar.</li>
+    <li>Guardá los cambios con <code>git commit</code> y actualizá con <code>git push</code>.</li>
+  </ul>
+</div>
+<footer>
+  Proyecto educativo – Universidad Católica de Salta • UCASAL 2025
+</footer>
+</body>
+</html>
